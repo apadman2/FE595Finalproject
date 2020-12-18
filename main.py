@@ -182,14 +182,6 @@ app.layout = html.Div(children=[
 def update_output2(value):
     return '{} Million'.format(value)
 
-
-@app.callback(
-    Output('genre_result', 'children'),
-    [Input('genre_dropdown', 'value')])
-def update_output3(value):
-    return '{}'.format(value)
-
-
 @app.callback(
     Output('nudity_result', 'children'),
     [Input('nudity_slider', 'value')])
