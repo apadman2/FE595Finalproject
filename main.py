@@ -177,14 +177,6 @@ app.layout = html.Div(children=[
           'background': '#00bd81',
           'text-align': 'center'})
 
-
-@app.callback(
-    Output('movie_result', 'children'),
-    [Input('movie_input', 'value')])
-def update_output1(value):
-    return '{}'.format(value)
-
-
 @app.callback(
     Output('budget_result', 'children'),
     [Input('budget_slider', 'value')])
