@@ -15,7 +15,6 @@ from plotting import Plot
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 # Figure
-dtf = Plot
 fig = {}
 
 # Layout
