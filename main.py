@@ -179,40 +179,45 @@ app.layout = html.Div(children=[
 
 @app.callback(
     Output('budget_result', 'children'),
-    [Input('budget_slider', 'value')])
+    Input('budget_slider', 'value')
+)
 def update_output2(value):
     return '{} Million'.format(value)
 
 @app.callback(
     Output('nudity_result', 'children'),
-    [Input('nudity_slider', 'value')])
+    Input('nudity_slider', 'value')
+)
 def update_output4(value):
     return '{}'.format(value)
 
 
 @app.callback(
     Output('violence_result', 'children'),
-    [Input('violence_slider', 'value')])
+    Input('violence_slider', 'value')
+)
 def update_output5(value):
     return '{}'.format(value)
 
 
 @app.callback(
     Output('language_result', 'children'),
-    [Input('language_slider', 'value')])
+    Input('language_slider', 'value')
+)
 def update_output6(value):
     return '{}'.format(value)
 
 
 @app.callback(
     Output('imdb_result', 'children'),
-    [Input('submit', 'n_clicks'),
-     State('budget_slider', 'value'),
-     State('genre_checklist', 'value'),
-     State('nudity_slider', 'value'),
-     State('violence_slider', 'value'),
-     State('language_slider', 'value'),
-     State('plot_input', 'value')])
+    Input('submit', 'n_clicks'),
+    State('budget_slider', 'value'),
+    State('genre_checklist', 'value'),
+    State('nudity_slider', 'value'),
+    State('violence_slider', 'value'),
+    State('language_slider', 'value'),
+    State('plot_input', 'value')
+)
 def clicks(n, budget, genre, nudity, violence, language, plot):
     plot_senti = Senti(str(plot))
     plot_senti = plot_senti.sentiment()
@@ -222,13 +227,14 @@ def clicks(n, budget, genre, nudity, violence, language, plot):
 
 @app.callback(
     Output('graph_results', 'figure'),
-    [Input('submit', 'n_clicks'),
-     State('budget_slider', 'value'),
-     State('genre_checklist', 'value'),
-     State('nudity_slider', 'value'),
-     State('violence_slider', 'value'),
-     State('language_slider', 'value'),
-     State('plot_input', 'value')])
+    Input('submit', 'n_clicks'),
+    State('budget_slider', 'value'),
+    State('genre_checklist', 'value'),
+    State('nudity_slider', 'value'),
+    State('violence_slider', 'value'),
+    State('language_slider', 'value'),
+    State('plot_input', 'value')
+)
 def plottt(n, budget, genre, nudity, violence, language, plot):
     plot_senti = Senti(str(plot))
     plot_senti = plot_senti.sentiment()
