@@ -1,4 +1,5 @@
 __________________________IMDB RATING GENERATOR___________________________
+
 ____________________________ METHODOLOGY __________________________________
 
 We webscraped the https://kids-in-mind.com/ website to get a score of Nudity, Violence and Language for around 5200 movies. Using the resulting dataset, we scraped https://en.wikipedia.org/wiki/Main_Page site to download the plot of each movie and use this text as an input in sentiment analysis to see the positivity/ negativity of the movie. We used the IMDB dataset to download important details like budget and IMDB rating of each movie and this resulted in the final csv shown in this repository (ie. FinalMovieUpdated2.csv). 
@@ -16,5 +17,6 @@ ______________________STEPS TO USE THE DASH APP ___________________________
 6. Enter the plot of the imaginary movie and please try to make the text as long as possible for better results.
 7. Click the submit button and view the results at the bottom.
 8. Based on your choices, the graph will show how 'Our Movie' fared against other movies with similar genres
+
 
 _____________________THANK YOU!!!!!!!!!!_____________________________________
