@@ -1,4 +1,4 @@
-__________________________IMDB RATING GENERATOR
+__IMDB RATING GENERATOR__
 
 ____________________________ METHODOLOGY __________________________________
 
@@ -19,4 +19,4 @@ ______________________STEPS TO USE THE DASH APP ___________________________
 8. Based on your choices, the graph will show how 'Our Movie' fared against other movies with similar genres
 
 
-_____________________THANK YOU!!!!!!!!!!
+__THANK YOU!!!!!!!!!!__
