@@ -6,6 +6,8 @@ We webscraped the https://kids-in-mind.com/ website to get a score of Nudity, Vi
 
 Finally, we created a dash app that runs in a browser using flask. This serves as our 'front-end' to receive input data from the user. We intially planned on using AWS to display our results but the app slowed down because of the large csv file.
 
+The knm files were used to create the final dataset and show the webscraping process.
+
 ______________________STEPS TO USE THE DASH APP ___________________________
 
 1. Download the entire repository into the desired directory
